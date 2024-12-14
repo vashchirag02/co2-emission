@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2 Emission Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p><strong>Country:</strong> {{ country }}</p>
+        <p><strong>Year:</strong> {{ year }}</p>
+        <p><strong>GDP (PPP constant 2017 international $):</strong> {{ gdp }}</p>
+        <p><strong>Primary Energy Consumption (TWh):</strong> {{ energy_consumption }}</p>
+        <p><strong>Electricity Generation (TWh):</strong> {{ electricity_generation }}</p>
+        <p><strong>Predicted Annual CO2 Emissions:</strong> {{ prediction }}</p>
+        <p><strong>Classification:</strong> {{ classification }}</p>
+        <a href="/" class="button">Make Another Prediction</a>
+    </div>
+</body>
+</html>
